@@ -245,10 +245,10 @@ def main(dictionary):
     print('Starting Generator MLE Training...')
     gen_optimizer = optim.Adam(gen.parameters(), lr=1e-3)
 
-    # train_generator_MLE(gen, gen_optimizer, oracle, train_samples, summary_samples, valid_samples, valid_summary,dictionary,  MLE_TRAIN_EPOCHS)
-    # torch.save(gen.state_dict(), pretrained_gen_path)
+    train_generator_MLE(gen, gen_optimizer, oracle, train_samples, summary_samples, valid_samples, valid_summary,dictionary,  MLE_TRAIN_EPOCHS)
+    torch.save(gen.state_dict(), pretrained_gen_path)
 
-    gen.load_state_dict(torch.load(pretrained_gen_path))
+    # gen.load_state_dict(torch.load(pretrained_gen_path))
 
     # PRETRAIN DISCRIMINATOR
     print('\nStarting Discriminator Training...')
