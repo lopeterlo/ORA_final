@@ -102,5 +102,15 @@ In this project, We address text summarization problem using GAN-based approach.
 ![image](https://user-images.githubusercontent.com/22761888/122670617-898f6180-d1f5-11eb-94dd-74dd2b07c113.png)
 
 
+## Training step: 
+
+```
+python main.py
+```
+
+## Testing step:
+```
+python predict.py
+```
 
 
