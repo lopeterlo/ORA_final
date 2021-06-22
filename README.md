@@ -109,8 +109,14 @@ python main.py
 ```
 
 ## Testing step:
+First we predict the summary from given testing data:
 ```
 python predict.py
 ```
+Next, we evaluate the predicted summary with ROUGE score:
+```
+python ./score/scorer.py "Predicted_data_path" "True_data_path"
+```
+
 
 
